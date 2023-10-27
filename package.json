@@ -1,0 +1,20 @@
+{
+  "name": "raspi-control-cli",
+  "description": "Simple script to control your raspberry pi.",
+  "version": "0.1.0",
+  "license": "ISC",
+  "main": "main.js",
+  "bin": "dist/main.js",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "child_process": "^1.0.2",
+    "commander": "^11.1.0",
+    "esbuild": "^0.19.5",
+    "pkg": "^5.8.1"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/esbuild main.ts --outfile=dist/main.js --bundle --color --platform=node --target=node18",
+    "package": "./node_modules/.bin/pkg dist/main.js --target node18-linux-arm64 -o dist/bin/raspi-control-cli --no-bytecode --public-packages --public",
+    "release_cli": "npm run build && npm run package"
+  }
+}
