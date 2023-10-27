@@ -40,7 +40,7 @@ npm install
 Then you can build the cli using this command:
 
 ```bash
-npm run release_cli```
+npm run release_cli
 ```
 
 You will see the built cli inside the ```dist/bin``` folder.
