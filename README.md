@@ -27,7 +27,7 @@ Then run it like this:
 ./raspi-control-cli
 ```
 
-**Warning ⚠️:** For some functions (liek the update one) you may need to use ```sudo```
+**Warning ⚠️:** For some functions (like the update one) you may need to use ```sudo```
 
 ### Building
 
